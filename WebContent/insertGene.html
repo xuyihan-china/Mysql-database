@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>插入新基因</title>
+	<link rel="stylesheet" href="./login.css">
+	<style>
+		#container2{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+		form{
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 2.8vh;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="container2">
+			<form action="insertGene.jsp" method="GET"> 
+				向gene55表中插入新基因
+				<br />
+				<br />
+				gene_id
+				<br />
+				<br />
+				<input type="text" name="gene_id">
+				<br />
+				<br />
+				start
+				<br />
+				<br />
+				<input type="text" name="start">
+				<br />
+				<br />
+				end
+				<br />
+				<br />
+				<input type="text" name="end">
+				<br />
+				<br />
+				biotype
+				<br />
+				<br />
+				<input type="text" name="biotype">
+				<br />
+				<br />
+				<br />
+				<input type="submit" name="choice" value="插入">
+				</form>
+		</div>
+		
+	</body>
+</html>

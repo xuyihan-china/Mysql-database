@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>外显子查询</title>
+</head>
+<link rel="stylesheet" href="./login.css">
+<style>
+	input {
+		width: 100%;
+		display: block;
+	}
+
+	.text1 {
+		color: white;
+	}
+	#container{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+</style>
+
+<body>
+	<div id="container">
+		<form action="visitExon.jsp" method="GET">
+			<div>
+				<h1 class="text1">输入待查询的transcript_id:</h1>
+			</div>
+			<input type="text" name="transid">
+			<input type="submit" name="choice" value="查询">
+		</form>
+	</div>
+
+</body>
+
+</html>
